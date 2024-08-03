@@ -26,34 +26,77 @@ h1, h2, h3, h4, h5, h6, p {
 a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
 	border: none;
 }
+
 /* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
 a:link {
-	color: #42413C;
+	color:#414958;
 	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
 }
 a:visited {
-	color: #6E6C64;
+	color: #4E5869;
 	text-decoration: underline;
 }
 a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
 	text-decoration: none;
 }
 
-/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+/* ~~ este contenedor rodea a todas las demás divs, lo que les asigna su anchura basada en porcentaje ~~ */
 .container {
-	width: 960px;
+	width: 80%;
+	max-width: 1260px;/* puede que sea conveniente una anchura máxima (max-width) para evitar que este diseño sea demasiado ancho en un monitor grande. Esto mantiene una longitud de línea más legible. IE6 no respeta esta declaración. */
+	min-width: 780px;/* puede que sea conveniente una anchura mínima (min-width) para evitar que este diseño sea demasiado estrecho. Esto permite que la longitud de línea sea más legible en las columnas laterales. IE6 no respeta esta declaración. */
 	background-color: #FFF;
-	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño. No es necesario si establece la anchura de .container en el 100%. */
+	overflow: hidden; /* esta declaración provoca que .container borre todas las columnas flotantes contenidas dentro de él. */
 }
 
-/* ~~ Esta es la información de diseño. ~~ 
+/* ~~ Estas son las columnas para el diseño. ~~ 
 
-1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+1) El relleno sólo se sitúa en la parte superior y/o inferior de las divs. Los elementos situados dentro de estas divs tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+2) No se asigna margen a las columnas, ya que todas ellas son flotantes. Si es preciso añadir un margen, evite colocarlo en el lado hacia el que se produce la flotación (por ejemplo: un margen derecho en una div configurada para flotar hacia la derecha). En muchas ocasiones, puede usarse relleno como alternativa. En el caso de divs para las que deba incumplirse esta regla, deberá añadir una declaración "display:inline" a la regla de la div para evitar un error que provoca que algunas versiones de Internet Explorer dupliquen el margen.
+
+3) Dado que las clases se pueden usar varias veces en un documento (y que también se pueden aplicar varias clases a un elemento), se ha asignado a las columnas nombres de clases en lugar de ID. Por ejemplo, dos divs de barra lateral podrían apilarse si fuera necesario. Si lo prefiere, éstas pueden cambiarse a ID fácilmente, siempre y cuando las utilice una sola vez por documento.
+
+4) Si prefiere que la navegación esté a la derecha en lugar de a la izquierda, simplemente haga que estas columnas floten en dirección opuesta (todas a la derecha en lugar de todas a la izquierda) y éstas se representarán en orden inverso. No es necesario mover las divs por el código fuente HTML.
 
 */
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding-bottom: 10px;
+}
 .content {
-
 	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+
+/* ~~ Los estilos de lista de navegación (pueden eliminarse si opta por usar un menú desplegable predefinido como el de Spry) ~~ */
+ul.nav {
+	list-style: none; /* esto elimina el marcador de lista */
+	border-top: 1px solid #666; /* esto crea el borde superior de los vínculos (los demás se sitúan usando un borde inferior en el LI) */
+	margin-bottom: 15px; /* esto crea el espacio entre la navegación en el contenido situado debajo */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* esto crea la separación de los botones */
+}
+ul.nav a, ul.nav a:visited { /* al agrupar estos selectores, se asegurará de que los vínculos mantengan el aspecto de botón incluso después de haber sido visitados */
+	padding: 5px 5px 5px 15px;
+	display: block; /* esto asigna propiedades de bloque al vínculo, lo que provoca que llene todo el LI que lo contiene. Esto provoca que toda el área reaccione a un clic de ratón. */
+	text-decoration: none;
+	background-color: #0000cc;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fondo y del texto tanto para usuarios que naveguen con ratón como para los que lo hagan con teclado */
+	background-color: #6F7D94;
+	color: #FFF;
 }
 
 /* ~~ clases float/clear varias ~~ */
@@ -74,15 +117,36 @@ a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usu
 .container .content h1 {
 	color: #0080FF;
 }
-.container .content h3 strong {
+.container .content h2 {
 	color: #0080FF;
 }
 -->
-</style></head>
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* este margen negativo de 1 px puede situarse en cualquiera de las columnas de este diseño con el mismo efecto corrector. */
+ul.nav a { zoom: 1; }  /* la propiedad de zoom da a IE el desencadenante hasLayout que necesita para corregir el espacio en blanco extra existente entre los vínculos */
+</style>
+<![endif]--></head>
 
 <body>
 
 <div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+     <li><a href="index.html">Inicio</a></li>
+      <li><a href="Tecnologia.html">Tecnologia</a></li>
+      <li><a href="Innovacion.html">Innovacion</a></li>
+      <li><a href="Seguridad.html">Seguridad</a></li>
+      <li><a href="Hardware y software.html">Hardware y Software</a></li>
+      <li><a href="Estrategia digital nacional.html">Estrategia digital nacional</a></li>
+      <li><a href="Lideres de opinión e influencia en la web.html">Lideres de opinion e influencia en la web</a></li>
+      <li><a href="Empresas innovadoras y sus características.html">Empresas innovadoras y sus caracteristicas</a></li>
+      <li><a href="Trayectoria tecnológica y ciclo de vida de las empresas.html">Trayectoria tecnologica y ciclo de vida de las empresas</a></li>
+      <li><a href="Tipos de innovacion.html">Tipos de innovacion</a></li>
+      <li><a href="Uso creativo de las tecnologias.html">Uso creativo de las tecnologias</a></li>
+      <li><a href="Sistemas de gestión de seguridad en internet.html">Sistemas de gestion de seguridad en internet</a>    <!-- end .sidebar1 --></li>
+    </ul>
+  </div>
   <div class="content">
     <h1 align="center">Uso creativo de las tecnologías </h1>
     <p>El uso creativo de las tecnologías implica aplicar herramientas y técnicas tecnológicas de manera innovadora para resolver problemas, crear nuevas oportunidades y generar valor en diferentes ámbitos.</p>
@@ -119,10 +183,7 @@ a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usu
     <p>### 11. **Diseño Generativo**</p>
     <p>- **Innovación en Arquitectura y Diseño**: Aplicar algoritmos de diseño generativo para crear soluciones arquitectónicas y de ingeniería optimizadas, explorando formas y estructuras que no se habrían considerado tradicionalmente.</p>
     <p>El uso creativo de la tecnología no solo impulsa la innovación, sino que también abre nuevas oportunidades y desafíos en diversos campos. Las empresas que logran aplicar estas tecnologías de manera creativa pueden diferenciarse de sus competidores, mejorar sus operaciones y ofrecer soluciones únicas a sus clientes.</p>
-    <h3 align="center"><img src="Imagenes de pagina web/images (3).jfif" width="335" height="225" /></h3>
-    <div align="center">
-    </div>
-    <h1 align="center">&nbsp;</h1>
+    <h3 align="center"><img src="Imagenes de pagina web/images (3).jfif" alt="" width="335" height="225" /></h3>
     <!-- end .content --></div>
   <!-- end .container --></div>
 </body>

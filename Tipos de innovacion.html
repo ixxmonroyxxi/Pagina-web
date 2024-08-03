@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #0033cc;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si se elimina overflow:hidden en .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	color: #0080FF;
+}
+.container .content h3 strong {
+	color: #0080FF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1 align="center">Tipos de innovación</h1>
+    <p>La innovación puede manifestarse de diversas formas, y entender los diferentes tipos puede ayudar a las empresas a identificar oportunidades y aplicar estrategias efectivas. </p>
+    <p>### 1. **Innovación de Producto**</p>
+    <p>- **Definición**: Implica el desarrollo de nuevos productos o la mejora significativa de productos existentes.<br />
+      - **Ejemplos**:<br />
+      - **Lanzamiento de un nuevo smartphone** con características avanzadas.<br />
+      - **Actualización de un software** con nuevas funcionalidades que mejoran la experiencia del usuario.</p>
+    <p>### 2. **Innovación de Proceso**</p>
+    <p>- **Definición**: Se centra en la mejora de los procesos de producción o servicios para aumentar la eficiencia, reducir costos o mejorar la calidad.<br />
+      - **Ejemplos**:<br />
+      - **Implementación de la manufactura ajustada (lean manufacturing)** para optimizar la producción.<br />
+      - **Automatización de procesos** en una línea de ensamblaje para reducir errores y tiempos de producción.</p>
+    <p>### 3. **Innovación en Modelo de Negocio**</p>
+    <p>- **Definición**: Involucra cambios en la forma en que una empresa crea, entrega y captura valor, cambiando el modelo tradicional de negocios.<br />
+      - **Ejemplos**:<br />
+      - **Modelo de suscripción** como el que utilizan Netflix o Spotify.<br />
+      - **Plataformas de economía colaborativa** como Airbnb y Uber que transforman el mercado de alojamiento y transporte.</p>
+    <p>### 4. **Innovación en Experiencia del Cliente**</p>
+    <p>- **Definición**: Mejora la forma en que los clientes interactúan con la empresa y sus productos o servicios.<br />
+      - **Ejemplos**:<br />
+      - **Diseño de una interfaz de usuario intuitiva** en una aplicación móvil para mejorar la facilidad de uso.<br />
+      - **Implementación de un sistema de servicio al cliente basado en chatbots** para ofrecer asistencia rápida y personalizada.</p>
+    <p>### 5. **Innovación en Marketing**</p>
+    <p>- **Definición**: Introduce nuevas estrategias o técnicas para promover y vender productos o servicios.<br />
+      - **Ejemplos**:<br />
+      - **Campañas de marketing digital** que utilizan técnicas avanzadas de segmentación y personalización.<br />
+      - **Uso de realidad aumentada (AR)** en publicidad para ofrecer una experiencia interactiva al cliente.</p>
+    <p>### 6. **Innovación Organizacional**</p>
+    <p>- **Definición**: Implica cambios en la estructura o cultura organizacional para mejorar el desempeño y la colaboración.<br />
+      - **Ejemplos**:<br />
+      - **Adopción de métodos ágiles** para mejorar la colaboración y la eficiencia en el desarrollo de proyectos.<br />
+      - **Creación de equipos multidisciplinarios** para fomentar la innovación y la creatividad.</p>
+    <p>### 7. **Innovación Social**</p>
+    <p>- **Definición**: Se enfoca en resolver problemas sociales o ambientales a través de nuevas soluciones o enfoques.<br />
+      - **Ejemplos**:<br />
+      - **Desarrollo de tecnologías limpias** para reducir la huella de carbono.<br />
+      - **Iniciativas de comercio justo** que promueven prácticas de negocio sostenibles y equitativas.</p>
+    <p>### 8. **Innovación en Tecnología**</p>
+    <p>- **Definición**: Involucra el desarrollo de nuevas tecnologías o la aplicación innovadora de tecnologías existentes.<br />
+      - **Ejemplos**:<br />
+      - **Avances en inteligencia artificial (IA)** y aprendizaje automático para mejorar productos y servicios.<br />
+      - **Desarrollo de nuevas tecnologías de almacenamiento** como los discos de estado sólido (SSD) frente a los discos duros tradicionales.</p>
+    <p>### 9. **Innovación Disruptiva**</p>
+    <p>- **Definición**: Introduce productos o servicios que cambian radicalmente el mercado o la forma en que se realizan las cosas, desplazando a tecnologías o modelos establecidos.<br />
+      - **Ejemplos**:<br />
+      - **La llegada de los teléfonos inteligentes** que reemplazaron a muchos dispositivos electrónicos, como cámaras y reproductores de música.<br />
+      - **La irrupción de la tecnología blockchain** que tiene el potencial de transformar múltiples industrias, desde las finanzas hasta la cadena de suministro.</p>
+    <p>### 10. **Innovación Incremental**</p>
+    <p>- **Definición**: Se refiere a pequeñas mejoras y ajustes continuos en productos, servicios o procesos existentes.<br />
+      - **Ejemplos**:<br />
+      - **Actualizaciones periódicas de software** que introducen mejoras menores y corrección de errores.<br />
+      - **Modificaciones en un producto** para mejorar su funcionalidad o diseño sin cambiar su esencia.</p>
+    <p>Cada tipo de innovación puede tener un impacto significativo en el éxito de una empresa, dependiendo de cómo se alinee con las necesidades del mercado y las capacidades internas. Las empresas exitosas suelen combinar varios tipos de innovación para mantenerse competitivas y relevantes.</p>
+    <p>&nbsp;</p>
+    <p align="center"><strong><img src="Imagenes de pagina web/1525468414410.png" width="580" height="375" /></strong> </p>
+    <h3 align="center">&nbsp;</h3>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>

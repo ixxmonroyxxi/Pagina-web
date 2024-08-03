@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #0033cc;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si se elimina overflow:hidden en .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	color: #0080FF;
+}
+.container .content h3 strong {
+	color: #0080FF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1 align="center">Empresas innovadoras y sus características</h1>
+    <p>Las empresas innovadoras son aquellas que se destacan por su capacidad para desarrollar y aplicar nuevas ideas, tecnologías o procesos que mejoran su desempeño y crean valor para sus clientes. </p>
+    <p>1. **Cultura de Innovación**: Fomentan un entorno en el que se valora la creatividad y se alienta a los empleados a experimentar y proponer nuevas ideas. Esto incluye una mentalidad abierta al cambio y la aceptación de fracasos como oportunidades de aprendizaje.</p>
+    <p>2. **Liderazgo Visionario**: Tienen líderes que no solo tienen una visión clara para el futuro, sino que también inspiran y motivan a su equipo para alcanzar objetivos innovadores. Estos líderes están dispuestos a tomar riesgos calculados y a invertir en nuevas tecnologías.</p>
+    <p>3. **Enfoque en el Cliente**: Las empresas innovadoras están centradas en las necesidades y deseos de sus clientes. Utilizan la retroalimentación del cliente para guiar el desarrollo de nuevos productos y servicios, y buscan constantemente formas de mejorar la experiencia del usuario.</p>
+    <p>4. **Inversión en Investigación y Desarrollo (I+D)**: Dedican recursos significativos a la investigación y el desarrollo para explorar nuevas tecnologías y soluciones. Esto puede incluir la creación de laboratorios de innovación, asociaciones con universidades o la adquisición de startups tecnológicas.</p>
+    <p>5. **Adaptabilidad y Agilidad**: Son flexibles y capaces de adaptarse rápidamente a los cambios del mercado y a las nuevas oportunidades. La agilidad permite a estas empresas pivotar o ajustar sus estrategias en respuesta a las tendencias emergentes y los desafíos inesperados.</p>
+    <p>6. **Uso de Tecnología Avanzada**: Implementan tecnologías emergentes como inteligencia artificial, big data, blockchain, o IoT (Internet de las Cosas) para mejorar sus operaciones, desarrollar nuevos productos y servicios, y mantenerse competitivas.</p>
+    <p>7. **Colaboración y Redes**: Buscan colaborar con otras empresas, startups, instituciones académicas y centros de investigación para intercambiar conocimientos y explorar nuevas oportunidades. Las asociaciones estratégicas pueden impulsar la innovación y acelerar el desarrollo de nuevas soluciones.</p>
+    <p>8. **Cultura de Aprendizaje Continuo**: Promueven el aprendizaje y el desarrollo profesional continuo entre sus empleados. Esto incluye capacitación en nuevas habilidades, participación en conferencias y talleres, y el fomento de un entorno de crecimiento personal y profesional.</p>
+    <p>9. **Estrategias de Monetización Creativa**: Desarrollan modelos de negocio innovadores que desafían los enfoques tradicionales. Esto puede incluir la creación de nuevos canales de ingresos, la implementación de estrategias de precios dinámicos, o el aprovechamiento de nuevas formas de distribución y comercialización.</p>
+    <p>10. **Sostenibilidad y Responsabilidad Social**: Muchas empresas innovadoras integran la sostenibilidad y la responsabilidad social en su estrategia. Buscan soluciones que no solo sean rentables, sino también beneficiosas para la sociedad y el medio ambiente.</p>
+    <p>Ejemplos de empresas innovadoras incluyen:</p>
+    <p>- **Tesla**: Conocida por su innovación en vehículos eléctricos y energías renovables, Tesla ha revolucionado la industria automotriz con sus avances tecnológicos y su enfoque en la sostenibilidad.<br />
+      - **Google**: Ha transformado el acceso a la información con su motor de búsqueda y continúa innovando en áreas como inteligencia artificial, computación en la nube y vehículos autónomos.<br />
+      - **Amazon**: Ha redefinido el comercio electrónico y la logística con su enfoque en la tecnología, la automatización y el servicio al cliente.<br />
+      - **SpaceX**: Innovadora en la industria aeroespacial, SpaceX ha avanzado en la reutilización de cohetes y la exploración espacial con el objetivo de hacer los viajes espaciales más accesibles.</p>
+    <p>Estas características y ejemplos ilustran cómo las empresas pueden destacarse mediante la innovación y mantenerse a la vanguardia en un mercado competitivo.</p>
+    <p align="center"><img src="Imagenes de pagina web/descarga.jfif" width="329" height="153" /></p>
+    <h3 align="center">&nbsp;</h3>
+    <div align="center">    </div>
+    <h1 align="center">&nbsp;</h1>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>

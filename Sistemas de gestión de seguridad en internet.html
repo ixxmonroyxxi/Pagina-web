@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #0033cc;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si se elimina overflow:hidden en .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	color: #0080FF;
+}
+.container .content h3 strong {
+	color: #0080FF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1 align="center">Sistemas de gestión de seguridad en internet</h1>
+    <p>Los sistemas de gestión de seguridad en internet son herramientas y prácticas diseñadas para proteger la información y los sistemas digitales de amenazas y vulnerabilidades. Estos sistemas ayudan a asegurar la confidencialidad, integridad y disponibilidad de los datos y servicios en línea.</p>
+    <p>### 1. **Firewalls**</p>
+    <p>- **Definición**: Dispositivos o software que controlan el tráfico de red entrante y saliente basado en reglas de seguridad predefinidas.<br />
+      - **Función**: Bloquean o permiten tráfico en función de criterios específicos, ayudando a prevenir accesos no autorizados a redes y sistemas.</p>
+    <p>### 2. **Sistemas de Detección y Prevención de Intrusiones (IDS/IPS)**</p>
+    <p>- **Definición**: Herramientas que monitorean y analizan el tráfico de red para detectar actividades sospechosas o maliciosas.<br />
+      - **Función**:<br />
+      - **IDS (Sistema de Detección de Intrusiones)**: Identifica y alerta sobre posibles amenazas.<br />
+      - **IPS (Sistema de Prevención de Intrusiones)**: No solo detecta, sino que también toma medidas para bloquear o mitigar las amenazas.</p>
+    <p>### 3. **Antivirus y Antimalware**</p>
+    <p>- **Definición**: Programas diseñados para detectar, prevenir y eliminar software malicioso (malware), como virus, spyware y ransomware.<br />
+      - **Función**: Analizan archivos y sistemas en busca de signos de infección y proporcionan protección en tiempo real contra nuevas amenazas.</p>
+    <p>### 4. **Sistemas de Gestión de Eventos e Información de Seguridad (SIEM)**</p>
+    <p>- **Definición**: Plataformas que agregan, analizan y gestionan grandes volúmenes de datos de eventos de seguridad de diversas fuentes.<br />
+      - **Función**: Facilitan la detección de amenazas, la respuesta a incidentes y el cumplimiento normativo mediante la correlación y el análisis de datos en tiempo real.</p>
+    <p>### 5. **Gestión de Identidades y Accesos (IAM)**</p>
+    <p>- **Definición**: Sistemas que gestionan y controlan el acceso a recursos y aplicaciones en función de la identidad del usuario.<br />
+      - **Función**: Implementan políticas de acceso, autenticación multifactor (MFA), y control de privilegios para asegurar que solo los usuarios autorizados puedan acceder a los recursos sensibles.</p>
+    <p>### 6. **Protección de Datos y Cifrado**</p>
+    <p>- **Definición**: Técnicas y herramientas para proteger datos en reposo y en tránsito mediante cifrado.<br />
+      - **Función**: Garantizan que los datos sean ilegibles para personas no autorizadas, incluso si se interceptan o se accede a ellos de manera no autorizada.</p>
+    <p>### 7. **Backups y Recuperación ante Desastres**</p>
+    <p>- **Definición**: Estrategias y herramientas para crear copias de seguridad de los datos y sistemas, y para recuperar estos datos en caso de pérdida o corrupción.<br />
+      - **Función**: Aseguran la disponibilidad y la integridad de los datos en caso de fallos, ataques o desastres.</p>
+    <p>### 8. **Seguridad en la Nube**</p>
+    <p>- **Definición**: Conjunto de prácticas y herramientas específicas para proteger datos y aplicaciones que residen en entornos de computación en la nube.<br />
+      - **Función**: Incluye medidas como el cifrado de datos en la nube, controles de acceso y políticas de seguridad específicas para proveedores de servicios en la nube.</p>
+    <p>### 9. **Evaluación de Vulnerabilidades y Pruebas de Penetración**</p>
+    <p>- **Definición**: Herramientas y servicios que identifican y evalúan vulnerabilidades en sistemas y redes.<br />
+      - **Función**: Realizan análisis de seguridad y pruebas de penetración para detectar debilidades y asegurar que se tomen medidas correctivas antes de que puedan ser explotadas por atacantes.</p>
+    <p>### 10. **Seguridad de Aplicaciones**</p>
+    <p>- **Definición**: Estrategias y herramientas para asegurar que las aplicaciones sean seguras y estén libres de vulnerabilidades.<br />
+      - **Función**: Incluye prácticas como el análisis de código fuente, pruebas de seguridad y la implementación de controles de seguridad en el desarrollo y despliegue de aplicaciones.</p>
+    <p>### 11. **Políticas y Procedimientos de Seguridad**</p>
+    <p>- **Definición**: Conjunto de directrices y procedimientos para gestionar la seguridad de la información dentro de una organización.<br />
+      - **Función**: Incluyen políticas sobre el uso seguro de los sistemas, manejo de datos sensibles, respuesta a incidentes y formación de empleados.</p>
+    <p>### 12. **Concienciación y Formación en Seguridad**</p>
+    <p>- **Definición**: Programas y recursos educativos para sensibilizar a los empleados sobre las mejores prácticas de seguridad.<br />
+      - **Función**: Aumenta la conciencia sobre amenazas comunes y fomenta prácticas seguras, como el manejo adecuado de contraseñas y la identificación de intentos de phishing.</p>
+    <p>### 13. **Autenticación Multifactor (MFA)**</p>
+    <p>- **Definición**: Método de autenticación que requiere más de un factor de verificación para acceder a sistemas o datos.<br />
+      - **Función**: Añade una capa adicional de seguridad al requerir combinaciones de algo que el usuario sabe (contraseña), algo que el usuario tiene (token o smartphone) y algo que el usuario es (biometría).</p>
+    <p>La implementación efectiva de estos sistemas y prácticas puede ayudar a proteger las redes y los datos contra una amplia gama de amenazas y ataques, garantizando una mayor seguridad en internet.</p>
+    <h3 align="center"><img src="Imagenes de pagina web/images (4).jfif" width="333" height="201" /></h3>
+    <div align="center">
+    </div>
+    <h1 align="center">&nbsp;</h1>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>

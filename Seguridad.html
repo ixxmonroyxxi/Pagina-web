@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #0033cc;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si se elimina overflow:hidden en .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	color: #0080FF;
+}
+.container .content h3 {
+	color: #0080FF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1 align="center">SEGURIDAD</h1>
+    <h3 align="center">1. <strong>Seguridad de la Información:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Confidencialidad:</strong> Asegurar que la información solo sea accesible para personas autorizadas. Esto se logra mediante cifrado de datos, controles de acceso y políticas de privacidad.</li>
+        <li><strong>Integridad:</strong> Garantizar que los datos no sean alterados o manipulados sin autorización. Los mecanismos como los hashes criptográficos y las firmas digitales son comunes para verificar la integridad de los datos.</li>
+        <li><strong>Disponibilidad:</strong> Asegurar que la información y los sistemas estén disponibles para los usuarios autorizados cuando se necesiten. Esto incluye la protección contra ataques de denegación de servicio (DDoS) y la implementación de sistemas de respaldo y recuperación.</li>
+      </ul>
+    </div>
+    <h3 align="center">2. <strong>Seguridad de Redes:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Firewalls:</strong> Dispositivos o software que controlan el tráfico de red, permitiendo o bloqueando el acceso basado en políticas de seguridad.</li>
+        <li><strong>Sistemas de Detección y Prevención de Intrusiones (IDS/IPS):</strong> Herramientas que monitorizan y analizan el tráfico de red para detectar y prevenir actividades sospechosas o maliciosas.</li>
+        <li><strong>Segmentación de Red:</strong> Dividir la red en segmentos más pequeños para limitar el acceso y contener posibles brechas de seguridad.</li>
+      </ul>
+    </div>
+    <h3 align="center">3. <strong>Seguridad de Aplicaciones:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Desarrollo Seguro:</strong> Incorporar prácticas de seguridad desde el diseño y desarrollo del software, como la validación de entradas y el manejo seguro de errores.</li>
+        <li><strong>Pruebas de Seguridad:</strong> Realizar pruebas como análisis de vulnerabilidades y pruebas de penetración para identificar y corregir fallos en la seguridad antes de que el software entre en producción.</li>
+        <li><strong>Parcheo y Actualizaciones:</strong> Mantener las aplicaciones actualizadas con los últimos parches de seguridad para proteger contra vulnerabilidades conocidas.</li>
+      </ul>
+    </div>
+    <h3 align="center">4. <strong>Seguridad de Hardware:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Protección Físico:</strong> Asegurar los dispositivos y servidores físicamente para evitar robos, accesos no autorizados o daños.</li>
+        <li><strong>Protección de Hardware:</strong> Uso de tecnologías como Trusted Platform Module (TPM) para proporcionar almacenamiento seguro de claves y otros datos sensibles.</li>
+      </ul>
+    </div>
+    <h3 align="center">5. <strong>Seguridad de Datos:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Cifrado de Datos:</strong> Convertir datos en un formato ilegible sin la clave adecuada para proteger la información en tránsito y en reposo.</li>
+        <li><strong>Control de Acceso:</strong> Implementar mecanismos para controlar quién puede ver o modificar los datos, utilizando autenticación multifactor y gestión de identidades.</li>
+      </ul>
+    </div>
+    <h3 align="center">6. <strong>Seguridad en la Nube:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Protección de Datos en la Nube:</strong> Asegurar los datos almacenados en servicios de nube mediante cifrado y control de acceso.</li>
+        <li><strong>Cumplimiento y Auditoría:</strong> Monitorear y auditar el uso de servicios en la nube para asegurar que se cumplan las políticas de seguridad y regulaciones.</li>
+      </ul>
+    </div>
+    <h3 align="center">7. <strong>Seguridad de Identidad y Acceso:</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Autenticación:</strong> Verificar la identidad de los usuarios mediante métodos como contraseñas, autenticación multifactor (MFA) y biometría.</li>
+        <li><strong>Autorización:</strong> Controlar los permisos y el acceso a recursos según el rol y la necesidad de los usuarios.</li>
+      </ul>
+    </div>
+    <h1 align="center"><img src="Imagenes de pagina web/images (1).jfif" width="389" height="197" /></h1>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>

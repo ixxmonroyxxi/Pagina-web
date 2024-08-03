@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #0033cc;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a todos los demás elementos ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si se elimina overflow:hidden en .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 {
+	color: #0080FF;
+}
+.container .content h3 strong {
+	color: #0080FF;
+}
+.container .content h4 strong {
+	color: #0080FF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1 align="center">HARDWARE Y SOFTWARE</h1>
+    <h3 align="center"><strong>Hardware</strong></h3>
+    <p align="center"><strong>Hardware</strong> se refiere a las partes físicas y tangibles de un sistema informático. Son los componentes electrónicos y mecánicos que forman una computadora o dispositivo tecnológico. El hardware es esencial para ejecutar el software y realizar las tareas que los usuarios requieren. Algunos ejemplos y categorías clave de hardware incluyen:</p>
+    <h4 align="center"><strong>1. Componentes de una Computadora:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Unidad Central de Procesamiento (CPU):</strong> El &quot;cerebro&quot; de la computadora, que realiza las instrucciones del software mediante operaciones aritméticas y lógicas.</li>
+        <li><strong>Memoria (RAM):</strong> Almacena datos temporales que el CPU necesita mientras ejecuta programas.</li>
+        <li><strong>Disco Duro / SSD:</strong> Dispositivos de almacenamiento que conservan datos y software a largo plazo.</li>
+        <li><strong>Placa Base (Motherboard):</strong> La placa principal que conecta todos los componentes de la computadora y permite la comunicación entre ellos.</li>
+        <li><strong>Tarjeta Gráfica (GPU):</strong> Procesador especializado en la renderización de imágenes y gráficos, crucial para aplicaciones gráficas intensivas como videojuegos y edición de video.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>2. Periféricos:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Teclado y Ratón:</strong> Dispositivos de entrada que permiten interactuar con la computadora.</li>
+        <li><strong>Monitor:</strong> Dispositivo de salida que muestra la interfaz gráfica y la información generada por la computadora.</li>
+        <li><strong>Impresora y Escáner:</strong> Dispositivos para imprimir documentos y digitalizar imágenes y textos.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>3. Dispositivos de Almacenamiento Externo:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Discos Duros Externos y Unidades USB:</strong> Dispositivos portátiles para almacenar y transferir datos.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>4. Hardware de Red:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Routers y Switches:</strong> Dispositivos que gestionan y dirigen el tráfico de datos en redes locales e internet.</li>
+        <li><strong>Módems:</strong> Dispositivos que conectan redes locales a proveedores de servicios de internet.</li>
+      </ul>
+    </div>
+    <h3 align="center"><strong>Software</strong></h3>
+    <p align="center"><strong>Software</strong> se refiere a los programas y aplicaciones que se ejecutan en el hardware. A diferencia del hardware, el software es intangible y consiste en conjuntos de instrucciones que le dicen al hardware qué hacer. El software se clasifica en varias categorías:</p>
+    <h4 align="center"><strong>1. Sistemas Operativos:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Windows, macOS, Linux, Android, iOS:</strong> Sistemas que gestionan el hardware y proporcionan una interfaz para que los usuarios interactúen con el sistema.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>2. Aplicaciones de Usuario:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Procesadores de Texto:</strong> Como Microsoft Word o Google Docs, utilizados para crear y editar documentos.</li>
+        <li><strong>Navegadores Web:</strong> Como Google Chrome, Mozilla Firefox y Safari, para acceder a la web.</li>
+        <li><strong>Software de Edición de Imágenes y Videos:</strong> Como Adobe Photoshop y Final Cut Pro, para la edición gráfica y de video.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>3. Software de Utilidad:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Antivirus y Antimalware:</strong> Programas diseñados para proteger el sistema contra virus y otras amenazas.</li>
+        <li><strong>Herramientas de Backup:</strong> Para hacer copias de seguridad de datos importantes.</li>
+        <li><strong>Herramientas de Gestión del Sistema:</strong> Como administradores de discos y limpiadores de sistema.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>4. Software de Desarrollo:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Lenguajes de Programación:</strong> Como Python, Java, y C++, que se utilizan para crear otros programas y aplicaciones.</li>
+        <li><strong>Entornos de Desarrollo Integrados (IDEs):</strong> Como Visual Studio y Eclipse, que proporcionan herramientas para el desarrollo de software.</li>
+      </ul>
+    </div>
+    <h4 align="center"><strong>5. Software de Red y Comunicaciones:</strong></h4>
+    <div align="center">
+      <ul>
+        <li><strong>Clientes de Correo Electrónico:</strong> Como Microsoft Outlook y Mozilla Thunderbird, para gestionar correos electrónicos.</li>
+        <li><strong>Herramientas de Comunicación:</strong> Como Slack y Microsoft Teams, para la colaboración y comunicación en equipos.</li>
+      </ul>
+    </div>
+    <h3 align="center"><strong>Interacción entre Hardware y Software</strong></h3>
+    <p align="center">El hardware y el software trabajan juntos para realizar tareas. El hardware proporciona la infraestructura física necesaria para ejecutar el software, mientras que el software dirige el hardware para realizar tareas específicas. Por ejemplo:</p>
+    <div align="center">
+      <ul>
+        <li><strong>Cuando usas un procesador de texto (software) para escribir un documento, el software envía instrucciones al CPU (hardware) para realizar cálculos y operaciones.</strong></li>
+        <li><strong>Cuando guardas un archivo, el software de procesamiento de texto le dice al sistema operativo (software) que almacene el archivo en el disco duro (hardware).</strong></li>
+      </ul>
+    </div>
+    <h3 align="center"><strong>Evolución y Avances</strong></h3>
+    <div align="center">
+      <ul>
+        <li><strong>Hardware:</strong> Continúa evolucionando con la miniaturización de componentes, mejoras en la velocidad de procesamiento y capacidades de almacenamiento. Ejemplos incluyen los avances en los chips de CPU, las unidades de estado sólido (SSD) y la realidad virtual (VR).</li>
+        <li><strong>Software:</strong> Está en constante desarrollo para mejorar la funcionalidad, la seguridad y la compatibilidad. Los avances incluyen la inteligencia artificial (IA), el aprendizaje automático (machine learning) y la virtualización.</li>
+      </ul>
+    </div>
+    <ul>
+      <div align="center"><img src="Imagenes de pagina web/bf8335f78f25dac2a7e47632b4e7d531.jpg" width="470" height="279" /></div>
+    </ul>
+<p>&nbsp;</p>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
